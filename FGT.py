@@ -5,30 +5,17 @@ t0= time()
 
 original_stdout = sys.stdout  # Save a reference to the original standard output
 
+#help function 
 def HelpCommandLine():
-    ContinueHelp = True
-    print("you have asked for help")
-    print("I will do my best but reading the online manual might be better")
-    while ContinueHelp:
-        print("\n","I can help with \"Flags\"(F), \"default-settings\"(D), and, \"online-support\"(O)")
-        print("you can exit this any time with \"X\"")
-        UserInput = input("What can I help with: ")
-        if UserInput == "X":
-            ContinueHelp = False
-        elif UserInput == "F" or UserInput == "Flags":
-            print("To use flags the file name of the input file must be placed in the command line")
-            print("python3 FGT.py combineloci.nex")
-            print("Flags can be typed after the file name order does not matter")
-            print("python3 FGT.py combineloci.nex MS F- R")
-            print()
-            print("MS")
-            print("F-")
-            print("R")
-            print("Nucleotide symbols to be ignored: \"N\" , \"?\" ")
-        elif UserInput == "D" or UserInput == "default-settings":
-            print("If no flags or file names are placed in the command line the program will use a combineloci.nex")
-        else:
-            print("I am sorry response has not been written for that")
+    print()
+    print("To run FGT.py, please perform the following steps: \n")
+    print("1) place the \"combineloci.nex\" file (which was output from Nexcombine.py or Phycombine.py) \ninto the folder containing FGT.py \n")
+    print("2) if you would like to generate recombination-filtered data in the \"longest block\" mode, \nthen type the following commands on the command line followed by enter: \n")
+    print(">python3 FGT.py combineloci.nex ? - ms \n")
+    print("If you would like to generate recombination-filtered data in the \"random block\" mode, \nthen type the following commands on the command line followed by enter: \n")
+    print(">python3 FGT.py combineloci.nex ? - ms r \n")
+    print("Note: be sure to only separate each flag with a single character \nwhitespace otherwise the program may not process your data properly. \nPlease read the \"Manual.pdf\" document for an \nexplanation of each flag.")
+    exit()
 
 
 #checks if file is openable
@@ -181,8 +168,8 @@ def printData(LocusNumber,LocusName,startinglength,undefinedSites,S,infiniteSite
        sys.stdout = f
        tableFormat = "longest block"+"\t"
        if "R" in ignore:
-         tableFormat = "Locations without recombinantion events"+"\t"+"Selected block"+"\t"
-       print("Locus number"+"\t"+"Locus name"+"\t"+"starting length (bp)"+"\t"+"Length excluding gaps\missing data"+"\t"+"S"+"\t"+"Infinite sites no"+"\t"+"Rm"+"\t"+"Locations of recombinantion events"+"\t"+tableFormat +"final length (bp)")
+         tableFormat = "Locations without recombination events"+"\t"+"Selected block"+"\t"
+       print("Locus number"+"\t"+"Locus name"+"\t"+"starting length (bp)"+"\t"+"Length excluding gaps\missing data"+"\t"+"S"+"\t"+"Infinite sites no"+"\t"+"Rm"+"\t"+"Locations of recombination events"+"\t"+tableFormat +"final length (bp)")
        for item in range(len(LocusNumber)):
         if "R" in ignore:
          print(str(LocusNumber[item])+"\t"+LocusName[item]+"\t"+str(startinglength[item])+"\t"+str(startinglength[item]-len(undefinedSites[item]))+"\t"+str(S[item])+"\t"+infiniteSites[item]+"\t"+str(Rm[item])+"\t"+locationsRM[item]+"\t"+str(locationsRandom[item])+"\t"+longestBlock[item]+"\t"+str(finalLength[item]))
@@ -465,7 +452,7 @@ def SetUp(inputFilePath):
  
        sys.stdout = original_stdout  # Reset the standard output to its original value
  
-   outputFilePath = "Trunc_" + fileName[0:-4] + ".phy"
+   outputFilePath = "Trunc_" + fileName[0:-4] + ".txt"
  
    count = 0
  
