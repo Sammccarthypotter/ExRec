@@ -26,13 +26,15 @@ included in the package).Instructions to execute each application can also be fo
 Just cd to the folder containing the application you want to run and then type “help” on the command line (as shown
 below) followed by enter:
 
+python3 Nexcombine.py
 
->python3 Nexcombine.py
->python3 Phycombine.py
->python3 FGT.py
->python3 Nexsplit.py
->python3 Physplit.py
+python3 Phycombine.py
+
+python3 FGT.py
+
+python3 Nexsplit.py
+
+python3 Physplit.py
 
 License and Warranty
 Please see the file "LICENSE" for details.
-![image](https://github.com/Sammccarthypotter/ExRec/assets/63830973/ff76327b-18bf-4bcb-8a0b-36560a594f32)
