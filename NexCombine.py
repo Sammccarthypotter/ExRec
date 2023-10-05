@@ -2,6 +2,15 @@ import os
 import sys
 from pathlib import Path
 
+def HelpCommandLine():
+  print()
+  print("To run NexCombine.py, please perform the following steps:\n")
+  print("1) place your input NEXUS files into a folder named \"nexus_files.\"")
+  print("2) place \"nexus_files\" into the folder containing the NexCombine.py application.")
+  print("3) type the following commands on the command line followed by enter:\n")
+  print(">python3 NexCombine.py")
+  exit()
+
 def find_number(lis):
   str_list = list(lis)
   output = []
@@ -254,6 +263,12 @@ class NexusFile:
    self.Speciesfinder(inputFilePath)
 
 if __name__ == "__main__":
+  #comand line arguments
+  if len(sys.argv) == 2:
+    helpCheck = sys.argv[1]
+    if helpCheck.lower() == "help":
+       HelpCommandLine()
+
   original_stdout = sys.stdout  # Save a reference to the original standard output
  
   this = Path(__file__).absolute().parent

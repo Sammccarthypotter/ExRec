@@ -2,6 +2,14 @@
 import os
 import sys
 from pathlib import Path
+
+def HelpCommandLine():
+  print()
+  print("To run Nexsplit.py, please perform the following steps:")
+  print("1) place the \"Trunc_combineloci.nex\" file (which was output by FGT.py) into the folder containing Nexsplit.py.")
+  print("2) type the following commands on the command line followed by enter: \n")
+  print(">python3 Nexsplit.py \n")
+  exit()
  
 #checks if file is openable
 def inputPath(inputFilePath):
@@ -215,6 +223,13 @@ class NexusFile:
    self.Speciesfinder(inputFilePath)
  
 if __name__ == "__main__":
+
+  #comand line arguments
+  if len(sys.argv) == 2:
+    helpCheck = sys.argv[1]
+    if helpCheck.lower() == "help":
+       HelpCommandLine()
+       
   original_stdout = sys.stdout  # Save a reference to the original standard output
   
   this = Path(__file__).absolute().parent
