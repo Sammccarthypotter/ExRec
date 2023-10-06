@@ -23,9 +23,9 @@ command line.
 A user’s manual is also included in the ExRec package. This document contains the
 instructions for using each of the five applications in ExRec as well as a tutorial that
 uses two sample data sets (also included in the package). Instructions on how to
-execute each application can also be found using the &quot;help&quot; command. On the
-command line, just cd to the folder containing the application you want to run and then
-type  enter:
+execute each application can also be found using the &quot;help&quot; command. On the 
+command line, just cd to the folder containing the application you want to run, type
+in the following commands (choose one), and then type enter:
 
 python3 Nexcombine.py help
 
