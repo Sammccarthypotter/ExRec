@@ -3,12 +3,12 @@ import sys
 from pathlib import Path
 
 def HelpCommandLine():
-  print()
+  print("Version 1.0 October 6, 2023")
   print("To run NexCombine.py, please perform the following steps:\n")
   print("1) place your input NEXUS files into a folder named \"nexus_files.\"")
   print("2) place \"nexus_files\" into the folder containing the NexCombine.py application.")
   print("3) type the following commands on the command line followed by enter:\n")
-  print(">python3 NexCombine.py")
+  print("python3 NexCombine.py")
   exit()
 
 def find_number(lis):
