@@ -7,13 +7,13 @@ original_stdout = sys.stdout  # Save a reference to the original standard output
 
 #help function 
 def HelpCommandLine():
-    print()
+    print("Version 1.0 October 6, 2023")
     print("To run FGT.py, please perform the following steps: \n")
     print("1) place the \"combineloci.nex\" file (which was output from Nexcombine.py or Phycombine.py) \ninto the folder containing FGT.py \n")
     print("2) if you would like to generate recombination-filtered data in the \"longest block\" mode, \nthen type the following commands on the command line followed by enter: \n")
-    print(">python3 FGT.py combineloci.nex ? - ms \n")
+    print("python3 FGT.py combineloci.nex ? - ms \n")
     print("If you would like to generate recombination-filtered data in the \"random block\" mode, \nthen type the following commands on the command line followed by enter: \n")
-    print(">python3 FGT.py combineloci.nex ? - ms r \n")
+    print("python3 FGT.py combineloci.nex ? - ms r \n")
     print("Note: be sure to only separate each flag with a single character \nwhitespace otherwise the program may not process your data properly. \nPlease read the \"Manual.pdf\" document for an \nexplanation of each flag.")
     exit()
 
