@@ -7,7 +7,7 @@ def HelpCommandLine():
   print("To run Physplit.py, please perform the following steps:")
   print("1) place the \"Trunc_combineloci.nex\" file (which was output by FGT.py) into the folder containing PhySplit.py.")
   print("2) type the following commands on the command line followed by enter: \n")
-  print(">python3 PhySplit.py")
+  print("python3 PhySplit.py")
   exit()
 
 original_stdout = sys.stdout  # Save a reference to the original standard output
