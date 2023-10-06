@@ -6,8 +6,8 @@ standalone applications: the first two convert folders of NEXUS or PHYLIP files 
 for the main program that conducts the four-gamete filtering procedures. The pipeline outputs 
 recombination-filtered data in concatenated NEXUS and PHYLIP formats and a tab-delimited table 
 containing descriptive statistics for all loci and the results. This software also allows the user to output 
-the longest non-recombined sequence blocks from loci (current best practice) or randomly select non-
-recombined blocks from loci (a newer approach). Two other applications in the package convert the 
+the longest non-recombined sequence blocks from loci (current best practice) or randomly select 
+non-recombined blocks from loci (a newer approach). Two other applications in the package convert the 
 recombination-filtered data into single-locus NEXUS or PHYLIP files. The ExRec package can thus facilitate 
 species delimitation, species tree, and historical demography studies by providing loci that better meet 
 the no-recombination assumption in coalescent-based analyses.
