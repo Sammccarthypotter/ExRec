@@ -20,21 +20,23 @@ command line.
 
 **Documentation**
 
-Download the "Manual.pdf" file from the ExRec Github page. This document contains the instructions 
-for using each of the five applications in ExRec as well as a tutorial that uses two sample data sets (also 
-included in the package).Instructions to execute each application can also be found using the "help" command. 
-Just cd to the folder containing the application you want to run and then type “help” on the command line (as shown
-below) followed by enter:
+A user’s manual is also included in the ExRec package. This document contains the
+instructions for using each of the five applications in ExRec as well as a tutorial that
+uses two sample data sets (also included in the package). Instructions on how to
+execute each application can also be found using the &quot;help&quot; command. On the
+command line, just cd to the folder containing the application you want to run and then
+type “help” on the command line (as shown below) followed by enter:
 
-python3 Nexcombine.py
+&gt;python3 Nexcombine.py help
 
-python3 Phycombine.py
+&gt;python3 Phycombine.py help
 
-python3 FGT.py
+&gt;python3 FGT.py help
 
-python3 Nexsplit.py
+&gt;python3 Nexsplit.py help
 
-python3 Physplit.py
+&gt;python3 Physplit.py help
 
 License and Warranty
-Please see the file "LICENSE" for details.
+
+Please see the file &quot;LICENSE&quot; for details.
