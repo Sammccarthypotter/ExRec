@@ -25,19 +25,17 @@ instructions for using each of the five applications in ExRec as well as a tutor
 uses two sample data sets (also included in the package). Instructions on how to
 execute each application can also be found using the &quot;help&quot; command. On the
 command line, just cd to the folder containing the application you want to run and then
-type “help” on the command line (as shown below) followed by enter:
+type  enter:
 
-&gt;python3 Nexcombine.py help
+python3 Nexcombine.py help
 
-&gt;python3 Phycombine.py help
+python3 Phycombine.py help
 
-&gt;python3 FGT.py help
+python3 FGT.py help
 
-&gt;python3 Nexsplit.py help
+python3 Nexsplit.py help
 
-&gt;python3 Physplit.py help
-
-
+python3 Physplit.py help
 
 **License and Warranty**
 
