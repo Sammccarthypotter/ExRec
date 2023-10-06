@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 def HelpCommandLine():
-  print()
+  print("Version 1.0 October 6, 2023")
   print("To run Physplit.py, please perform the following steps:")
   print("1) place the \"Trunc_combineloci.nex\" file (which was output by FGT.py) into the folder containing PhySplit.py.")
   print("2) type the following commands on the command line followed by enter: \n")
