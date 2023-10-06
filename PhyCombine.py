@@ -4,14 +4,14 @@ from pathlib import Path
 
 #help function 
 def HelpCommandLine():
-  print()
+  print("Version 1.0 October 6, 2023")
   print("To run PhyCombine.py, please perform the following steps:\n")
   print("1) place your input PHYLIP files into a folder named \"phylip_files.\"")
   print("2) place \"phylip_files\" into the folder containing the Phycombine.py application.")
   print("3) if your input files are in strict sequential or strict interleaved formats, then type the following commands on the command line followed by enter:\n")
-  print(">python3 Phycombine.py \n")
+  print("python3 Phycombine.py \n")
   print("If your input files are in relaxed sequential or relaxed interleaved formats, then type the following commands on the command line followed by enter:\n")
-  print(">python3 Phycombine.py r \n")
+  print("python3 Phycombine.py r \n")
   print("Note: because of the various PHYLIP file formats in use, we highly recommend that you read \nPages 5-9 in the Manual.pdf file, which illustrates many of the different \nPHYLIP format types and the corresponding command line syntax you need to use to successfully \nrun Phycombine.py. \n")
   exit()
 
